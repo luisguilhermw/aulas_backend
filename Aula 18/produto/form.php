@@ -14,7 +14,7 @@
     <h1>Cadastro de Produto</h1>
     <hr>
 
-    <form action="<?php echo isset($produto) ? "atualizar.php" : 'inserir.php' ?>" method="post">
+    <form action="<?php echo isset($produto) ? "atualizar.php" : 'inserir.php' ?>" method="post" enctype="multipart/form-data">
 
     <label for="nome">Nome</label><br>
     <input type="text" name="nome" id="nome" value="<?php echo $produto['nome'] ?? "" ; ?>"><br>
@@ -27,7 +27,8 @@
     <input type="number" step="0.01" name="preco" id="preco" value="<?php echo $produto['preco'] ?? "0.00"; ?>"><br>
 
     <label for="foto">Foto</label><br>
-    <input type="file" name="foto" id="foto"><br><br>
+    <input type="file" name="foto" id="foto"><br>
+    <br>
     
     <button type="submit">Cadastrar</button><br>
 
