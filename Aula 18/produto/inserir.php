@@ -32,5 +32,5 @@ $comando->execute();
 
 }
 //abre o arquivo produtos.php
-header("Location: produtos.php");
+header("Location: index.php");
 

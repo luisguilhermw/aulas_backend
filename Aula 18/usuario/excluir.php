@@ -23,6 +23,6 @@ $comando->bind_param("i", $id);
 $comando->execute();
 
 //abre o arquivo produtos.php
-header("Location: usuarios.php");
+header("Location: index.php");
 
 }
