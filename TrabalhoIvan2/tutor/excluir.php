@@ -10,7 +10,7 @@ if(isset($_GET['id']))
 $id =$_GET['id'];
 
 //String com o comando SQL para ser executado no DB
-$sql = "SELECT * FROM `tutor` WHERE  `idproduto`= ? ;";
+$sql = "DELETE FROM `tutor` WHERE  `codigo`= ? ;";
 
 
 //Prepara o SQL para ser executado no banco de dados
@@ -22,12 +22,7 @@ $comando->bind_param("i", $id);
 //executa o SQL - comando no bancos de dados
 $comando->execute();
 
-//pegar o comando da consulta
-$resultado = $comando->get_result();
-
-//pegar a primeira linha do resultado
-$produto = $resultado->fetch_assoc();
-
+//abre o arquivo produtos.php
+header("Location: index.php");
 
 }
-
