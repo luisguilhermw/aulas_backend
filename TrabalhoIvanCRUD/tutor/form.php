@@ -1,7 +1,7 @@
 <?php require_once "consultar_todos.php" ?>
 <?php require_once "../template/cabecalho.php"; ?>
 
-    <h1>Cadastro de Tutor</h1>
+    <center><h1>Cadastro de Tutores</h1></center>
     <hr>
 <div class="container">
     <form action="<?php echo isset($tutor) ? "atualizar.php" : 'inserir.php' ?>" method="post" enctype="multipart/form-data">
@@ -27,7 +27,7 @@
     <label for="tipo" class="form-label">Tipo</label><br>
     <input  name="tipo" id="tipo"><?php echo $tutor['tipo'] ?? ""; ?></input><br>
 
-   
+   <br>
 
     
     <button type="submit" class="btn btn-success">Cadastrar</button><br>
@@ -35,3 +35,5 @@
     </form>
     </div>
     
+    <br><br><br> <br> <br> <br> <br> 
+    <?php require_once "../template/rodape.php"; ?>

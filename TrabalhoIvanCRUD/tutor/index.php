@@ -3,7 +3,7 @@
 <?php require_once "../template/cabecalho.php"; ?>
 
     <div class ="container">
-        <h1>Tutor</h1>
+        <center><h1>Tutores</h1></center>
         <hr>
         <div class="text-end">
             <a href="form.php" class="btn btn-success" >Inserir tutores</a>
@@ -47,3 +47,5 @@
   </tbody>
 </table>
    </div>
+
+   <?php require_once "../template/rodape.php"; ?>

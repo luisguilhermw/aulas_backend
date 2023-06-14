@@ -14,8 +14,7 @@ $areaformacao = $_POST["areaformacao"];
 $tipo = $_POST["tipo"];
     
     //string com o comendo sql para ser executoado no db
-    $sql = "INSERT INTO `tutor` (`nome`, `sexo`, `polo `, `areaformacao`, `tipo`) 
-    VALUES (?, ?, ?, ?, ?);";
+    $sql = "INSERT INTO tutor (`nome`, `sexo`, `polo`, `areaformacao`, `tipo`) VALUES (?, ?, ?, ?, ?);";
     
     
     //prepara o slq para ser executado no banco de dados
