@@ -35,7 +35,7 @@
       <th scope="row"><?php echo $tutor['polo']; ?></th>
       <th scope="row"><?php echo $tutor['areaformacao']; ?></th>
       <th scope="row"><?php echo $tutor['tipo']; ?></th>
-      <th scope="row"><?php echo $tutor['codigo']; ?></th>
+    
 
       <td class="text-end">
         <a href="excluir.php?id=<?php echo $tutor['codigo']; ?>"class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Excluir</a>

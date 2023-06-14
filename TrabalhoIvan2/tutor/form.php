@@ -10,9 +10,12 @@
     <label for="nome" class="form-label">Nome</label><br>
     <input class="form-control" type="text" name="nome" id="nome" value="<?php echo $tutor['nome'] ?? "" ; ?>"><br>
    
+    <input type="hidden" name="codigo" id="codigo" value="<?php echo $tutor['codigo'] ?? ""; ?>"><br>
+
 
     <label for="sexo" class="form-label">Sexo</label><br>
     <input  name="sexo" id="sexo"><?php echo $tutor['sexo'] ?? ""; ?></input><br>
+
 
 
     <label for="polo" class="form-label">Polo</label><br>
