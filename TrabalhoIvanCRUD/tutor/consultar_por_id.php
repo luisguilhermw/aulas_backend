@@ -3,11 +3,11 @@
 require_once "../conexao.php";
 
 //verifica se foi enviado o param pela URL
-if(isset($_GET['codigo']))
+if(isset($_GET['id']))
 {
 
 //pega o valor do id que foi enviado pela URL
-$codigo =$_GET['codigo'];
+$codigo =$_GET['id'];
 
 //String com o comando SQL para ser executado no DB
 $sql = "SELECT * FROM tutor WHERE  `codigo`= ? ;";

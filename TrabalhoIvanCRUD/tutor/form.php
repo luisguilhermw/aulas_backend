@@ -1,4 +1,4 @@
-<?php require_once "consultar_todos.php" ?>
+<?php require_once "consultar_por_id.php" ?>
 <?php require_once "../template/cabecalho.php"; ?>
 
     <center><h1>Cadastro de Tutores</h1></center>
@@ -14,18 +14,18 @@
 
 
     <label for="sexo" class="form-label">Sexo</label><br>
-    <input  name="sexo" id="sexo"><?php echo $tutor['sexo'] ?? ""; ?></input><br>
+    <input  name="sexo" id="sexo" value="<?php echo $tutor['sexo'] ?? ""; ?>"><br>
 
 
 
     <label for="polo" class="form-label">Polo</label><br>
-    <input  name="polo" id="polo"><?php echo $tutor['polo'] ?? ""; ?></input><br>
+    <input  name="polo" id="polo" value="<?php echo $tutor['polo'] ?? ""; ?>"><br>
     
     <label for="areaformacao" class="form-label">Area Formação</label><br>
-    <input  name="areaformacao" id="areaformacao"><?php echo $tutor['areaformacao'] ?? ""; ?></input><br>
+    <input  name="areaformacao" id="areaformacao" value="<?php echo $tutor['areaformacao'] ?? ""; ?>"><br>
 
     <label for="tipo" class="form-label">Tipo</label><br>
-    <input  name="tipo" id="tipo"><?php echo $tutor['tipo'] ?? ""; ?></input><br>
+    <input  name="tipo" id="tipo" value="<?php echo $tutor['tipo'] ?? ""; ?>"><br>
 
    <br>
 

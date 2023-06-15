@@ -11,8 +11,9 @@ $areaformacao = $_POST["areaformacao"];
 $tipo = $_POST["tipo"];
 $codigo = $_POST["codigo"]; 
 
+
     //string com o comendo sql para ser executoado no db
-    $sql = "UPDATE tutor SET `nome`=?, `sexo`=?, `polo`=?, `areaformacao`=?, `tipo`=? WHERE  `codigo`=?;";
+    $sql = "UPDATE `tutor` SET `nome`=?, `sexo`=?, `polo`=?, `areaformacao`=?, `tipo`=? WHERE  `codigo`=?;";
     
     //echo $sql;
     //prepara o slq para ser executado no banco de dados
